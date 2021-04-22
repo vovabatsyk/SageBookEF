@@ -1,0 +1,35 @@
+﻿<Window x:Class="SageBookEF.EditSageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SageBookEF"
+        mc:Ignorable="d"
+        Title="EditSageWindow" Height="330.5" Width="576.5">
+    <Grid>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="43,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.105,-1.173"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="43,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.105,-1.173"/>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="109,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBoxAge" HorizontalAlignment="Left" Height="23" Margin="109,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBoxId" HorizontalAlignment="Left" Visibility="Hidden" Height="23" Margin="109,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ButtonSave" IsEnabled="False" Content="Save" Click="ButtonSave_OnClick" HorizontalAlignment="Left" Margin="109,124,0,0" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="DataGridSages" 
+                  HorizontalAlignment="Left" Height="236" Margin="273,36,0,0" VerticalAlignment="Top" Width="261"
+                  AutoGenerateColumns="False" CanUserAddRows="False"  
+                  ItemsSource="{Binding }"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="120" IsReadOnly="True" Header="Name" Binding="{Binding Path=Name}"/>
+                <DataGridTextColumn Width="50" IsReadOnly="True"  Header="Age" Binding="{Binding Path=Age}"/>
+                <DataGridTemplateColumn Width="*" Header="Edit">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button  Content="Edit" Click="ButtonEdit_OnClick"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

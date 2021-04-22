@@ -14,5 +14,10 @@ namespace SageBookEF.model
         {
             Books = new List<Book>();
         }
+
+        public override string ToString()
+        {
+            return $"Name: {this.Name} - age: {this.Age}";
+        }
     }
 }

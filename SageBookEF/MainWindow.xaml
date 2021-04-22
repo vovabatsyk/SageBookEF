@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Sage">
+                <MenuItem Header="New" Click="SageAdd_OnClick"></MenuItem>
+                <MenuItem Header="Edit" Click="SageEdit_OnClick"></MenuItem>
+                <MenuItem Header="Delete" Click="DeleteSage_OnClick" >
+                   
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Show" Click="ShowSages_OnClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit" ></MenuItem>
+            <MenuItem Header="View" ></MenuItem>
+        </Menu>
     </Grid>
 </Window>

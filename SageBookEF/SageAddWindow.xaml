@@ -1,0 +1,18 @@
+﻿<Window x:Class="SageBookEF.SageAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SageBookEF"
+        mc:Ignorable="d"
+        Title="SageAddWindow" Height="248.321" Width="442.824">
+    <Grid Margin="0,0,30,35">
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="205,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="88,44,0,0" VerticalAlignment="Top"/>
+        <Button Content="Save" Click="ButtonSave_OnClick" HorizontalAlignment="Left" Margin="126,154,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" Click="ButtonCancel_OnClick" HorizontalAlignment="Left" Margin="250,154,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="88,97,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxAge" HorizontalAlignment="Left" Height="23" Margin="205,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
