@@ -4,14 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SageBookEF"
-        mc:Ignorable="d"
-        Title="DeleteSageWindow" Height="284.124" Width="576.642">
-    <Grid Margin="0,0,63,-6">
-        <Button  x:Name="ButtonDeleteSage" IsEnabled="False" Click="DeleteSage_OnClick" Content="Delete" Margin="266,28,10,199" />
+        mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="DeleteSageWindow" Height="236" Width="432.821">
+    <Grid Margin="0,0,4,-19">
+        <Button  x:Name="ButtonDeleteSage" IsEnabled="False" Click="DeleteSage_OnClick" Content="Delete" Margin="266,70,10,124" />
         <ComboBox   x:Name="ComboBoxSages"
                     ItemsSource="{Binding Sages}"
-                    SelectedValue="{Binding Name}" 
-                    Selector.IsSelected="True" SelectionChanged="ComboBoxSages_OnSelectionChanged" Margin="10,28,295,199"
-                    />
+                    SelectedValue="{Binding Name}"
+                    Selector.IsSelected="True" SelectionChanged="ComboBoxSages_OnSelectionChanged" Margin="10,70,188,124"
+                    >
+
+        </ComboBox>
     </Grid>
 </Window>

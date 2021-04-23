@@ -33,5 +33,16 @@ namespace SageBookEF
             EditSageWindow window = new EditSageWindow();
             window.ShowDialog();
         }
+
+        private void ButtonBook_Onclick(object sender, RoutedEventArgs e)
+        {
+            BookWindow window = new BookWindow();
+            window.ShowDialog();
+        }
+
+        private void ButtonClose_Onclick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

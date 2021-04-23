@@ -65,6 +65,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BookWindow.xaml.cs">
+      <DependentUpon>BookWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DeleteSageWindow.xaml.cs">
       <DependentUpon>DeleteSageWindow.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,10 @@
     <Compile Include="ShowSages.xaml.cs">
       <DependentUpon>ShowSages.xaml</DependentUpon>
     </Compile>
+    <Page Include="BookWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DeleteSageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

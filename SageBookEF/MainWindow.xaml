@@ -4,21 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SageBookEF"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None">
     <Grid>
-        <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Sage">
-                <MenuItem Header="New" Click="SageAdd_OnClick"></MenuItem>
-                <MenuItem Header="Edit" Click="SageEdit_OnClick"></MenuItem>
-                <MenuItem Header="Delete" Click="DeleteSage_OnClick" >
-                   
+        <Menu Height="25" VerticalAlignment="Top" Margin="1" Background="#FF594B4B"  Width="800" Foreground="White">
+            <MenuItem Header="Sage" Padding="5,2,0,0">
+                <MenuItem Header="New" Foreground="Black" Click="SageAdd_OnClick"></MenuItem>
+                <MenuItem Header="Edit" Foreground="Black" Click="SageEdit_OnClick"></MenuItem>
+                <MenuItem Header="Delete" Foreground="Black" Click="DeleteSage_OnClick" >
+
                 </MenuItem>
                 <Separator />
-                <MenuItem Header="Show" Click="ShowSages_OnClick"></MenuItem>
+                <MenuItem Header="Show" Click="ShowSages_OnClick" Foreground="Black"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit" ></MenuItem>
-            <MenuItem Header="View" ></MenuItem>
+            <MenuItem Header="Book" Padding="5,2,0,0">
+                <MenuItem Header="Open" Click="ButtonBook_Onclick" Foreground="Black" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="SageBook" Padding="5,2,0,0">
+                <MenuItem Header="Bind" Foreground="Black"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Close" Click="ButtonClose_Onclick"  Padding="100,2,0,0"></MenuItem>
         </Menu>
     </Grid>
 </Window>
